@@ -94,11 +94,11 @@ tar:
 
 gcc:
 	cd Zoe; make;
-	make $(APP)  CC="gcc" CFLAGS="-O2 -Wall -Werror"
-	make $(APP2) CC="gcc" CFLAGS="-O2 -Wall -Werror"
-	make $(APP3) CC="gcc" CFLAGS="-O2 -Wall -Werror"
-	make $(APP4) CC="gcc" CFLAGS="-O2 -Wall -Werror"
-	make $(APP5) CC="gcc" CFLAGS="-O2 -Wall -Werror"
+	make $(APP)  CC="gcc" CFLAGS="-O2 -Wall "
+	make $(APP2) CC="gcc" CFLAGS="-O2 -Wall "
+	make $(APP3) CC="gcc" CFLAGS="-O2 -Wall "
+	make $(APP4) CC="gcc" CFLAGS="-O2 -Wall "
+	make $(APP5) CC="gcc" CFLAGS="-O2 -Wall "
 
 
 ###################
