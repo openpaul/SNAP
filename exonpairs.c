@@ -83,14 +83,14 @@ static zoeFeatureVec get_exons (const zoeTrellis t) {
 				switch (exon->label) {
 					case Esngl: skip = 1; break;
 					case Einit:
-						if (exon->score < MIN_EINIT_SCORE)  skip = 1; break;
-						if (length      < MIN_EINIT_LENGTH) skip = 1; break;
+						if (exon->score < MIN_EINIT_SCORE){skip = 1; break;}
+						if (length      < MIN_EINIT_LENGTH){ skip = 1; break;}
 					case Eterm:
-						if (exon->score < MIN_ETERM_SCORE)  skip = 1; break;
-						if (length      < MIN_ETERM_LENGTH) skip = 1; break;
+						if (exon->score < MIN_ETERM_SCORE){ skip = 1; break;}
+						if (length      < MIN_ETERM_LENGTH){ skip = 1; break;}
 					case Exon:
-						if (exon->score < MIN_EXON_SCORE)   skip = 1; break;
-						if (length      < MIN_EXON_LENGTH)  skip = 1; break;
+						if (exon->score < MIN_EXON_SCORE){ skip = 1; break;}
+						if (length      < MIN_EXON_LENGTH){ skip = 1; break;}
 					default: zoeExit("no, not possible");
 				}
 				if (skip) continue;
