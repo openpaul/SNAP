@@ -675,13 +675,13 @@ zoeHSP zoeAlign03 (
 
 int zoeHSPCmpQuery (const zoeHSP h1, const zoeHSP h2) {
 	if      (h1->q_start < h2->q_start && h1->q_end < h2->q_end) return -1;
-	else if (h1->q_start > h2->q_start && h2->q_end > h2->q_end) return  1;
+	else if (h1->q_start > h2->q_start && h1->q_end > h2->q_end) return  1;
 	else    return  0;
 }
 
 int zoeHSPCmpSbjct (const zoeHSP h1, const zoeHSP h2) {
 	if      (h1->s_start < h2->s_start && h1->s_end < h2->s_end) return -1;
-	else if (h1->s_start > h2->s_start && h2->s_end > h2->s_end) return  1;
+	else if (h1->s_start > h2->s_start && h1->s_end > h2->s_end) return  1;
 	else    return  0;
 }
 
