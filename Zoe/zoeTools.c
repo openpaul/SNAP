@@ -149,10 +149,11 @@ static void itoa (int n, char * s) {
 	do {
 		s[i++] = n % 10 + '0';
 	} while ((n /= 10) > 0);
-	if (sign < 0)
+	if (sign < 0){
 		s[i++] = '-';
 		s[i] = '\0';
 		reverse_string(s);
+    }
 }
 
 /* coor_t */
